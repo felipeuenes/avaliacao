@@ -1,0 +1,8 @@
+.displayHome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    margin: 2.6rem;
+}
