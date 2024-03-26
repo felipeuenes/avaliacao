@@ -7,11 +7,37 @@
     margin: 2.6rem;
 }
 
+
+
 .displayHome section p {
     width: 40.0rem;
     font-size: 2.0rem;
 }
 
 .titulo1{
-    
+    font-size: 2.4rem;
+    margin-bottom: -2.0rem;
+}
+
+.titulo2{
+    font-size: 5.6rem;
+    font-weight: 800;
+    color: #FB719F;
+}
+
+.btn{
+    width: 20.0rem;
+    height: 4.0rem;
+    margin-top: 1.6rem;
+    background-color: #4DA1C7;
+    color: #ffffff;
+    border: none;
+    border-radius: 5.0rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #3c7c99;
 }
