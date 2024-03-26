@@ -1,51 +1,89 @@
-.displayHome{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
-    margin: 2.6rem;
+.displayHome {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin: 2.6rem;
 }
-
-
 
 .displayHome section p {
-    width: 40.0rem;
-    font-size: 2.0rem;
+  width: 40rem;
+  font-size: 2rem;
 }
 
-.titulo1{
-    font-size: 2.4rem;
-    margin-bottom: -2.0rem;
+.titulo1 {
+  font-size: 2.4rem;
+  margin-bottom: -2rem;
 }
 
-.titulo2{
-    font-size: 5.6rem;
-    font-weight: 800;
-    color: #FB719F;
+.titulo2 {
+  font-size: 5.6rem;
+  font-weight: 800;
+  color: #fb719f;
 }
 
-.btn{
-    width: 20.0rem;
-    height: 4.0rem;
-    margin-top: 1.6rem;
-    background-color: #4DA1C7;
-    color: #ffffff;
-    border: none;
-    border-radius: 5.0rem;
-    font-size: 1.6rem;
-    font-weight: 800;
-    cursor: pointer;
+.btn {
+  width: 20rem;
+  height: 4rem;
+  margin-top: 1.6rem;
+  background-color: #4da1c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  cursor: pointer;
 }
 
-.btn:hover{
-    background-color: #3c7c99;
+.btn:hover {
+  background-color: #3c7c99;
+}
+
+.imagemHome {
+  animation: moveAndFade 1.5s;
 }
 
 
 
-@media screen and (max-width: 1080px){
-    .displayHome{
-        flex-direction: column;
+.textHome{
+
+    animation: moveText 1.5s;
+}
+@media screen and (max-width: 1080px) {
+  .displayHome {
+    flex-direction: column-reverse;
+    
+  }
+
+  .imagemHome{
+    margin-bottom: -6.0rem;
+  }
+}
+
+@keyframes moveAndFade {
+  0% {
+    opacity: 0; /* Opacidade inicial */
+    transform: translateX(200px); /* Posição inicial */
+  }
+ 
+  100% {
+    opacity: 1; /* Opacidade final */
+    transform: translateX(0px); /* Posição final */
+  }
+}
+
+
+@keyframes moveText {
+    0% {
+      opacity: 0; /* Opacidade inicial */
+      transform: translateX(-200px); /* Posição inicial */
     }
-}
+   
+    100% {
+      opacity: 1; /* Opacidade final */
+      transform: translateX(0px); /* Posição final */
+    }
+  }
+  
